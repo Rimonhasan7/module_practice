@@ -1,0 +1,99 @@
+১. CSS এর specificity বলতে একটা জিনিস আছে। অর্থাৎ কোন স্টাইল রুল এর চাইতে কে বেশি priority পাবে। 
+
+২. !important নামক একটা মরণ অস্ত্র যেটা ইউজ করা উচিত না। সেটা সম্পর্কেও কিছুটা জেনে যাবে। 
+
+৩. খানিকটা এডভান্সড একটা টপিক আছে। CSS Custom property নামক। যেটাকে কেউ কেউ css ভেরিয়েবল বলে থাকে। সেটা এবং calc নামক একটা css ফাংশন আছে। সেটা কিছুটা দেখানো হয়েছে। 
+
+৪. এর মধ্যে একটা ভিডিও ইম্পরট্যান্ট। এইটাতে chrome dev tool এর Elements tab এ গিয়ে কিভাবে CSS debug করতে হয়ে সেটা দেখানো হয়েছে। এইটা খুবই ইম্পর্টান্ট একটা ভিডিও। 
+
+৫. মেগা মেন্যু বিভিন্ন ওয়েবসাইট এ দেখবে। সেটা সিম্পল করে দেখানো হয়েছে। সেটা জাস্ট চোখ বুলিয়ে রাখো। ফিউচারে মন চাইলে এই ভিডিওতে ফেরত এসে দেখতে পারবে। 
+
+৬. তারপরের দুই ভিডিওতে ফিউচার সম্পর্কে বলা হয়েছে। সেগুলা কিছুটা এখন খেয়াল করে রাখো। কিছু Advanced selectors আর style guide এর কথা বলা হয়েছে। সেগুলা দেখো। 
+
+৭. লাষ্টের ভিডিওতে বলা আছে। কিভাবে HTML(HTML5) এবং CSS(CSS3) এর জিনিসগুলো হ্যান্ডেল করবে। 
+
+10-1 Introduction to UI UX, Different layout with example websites
+10-2 Rules to follow as best practice while designing a website
+for UI / UX 1. simlycity 2.alignment 3. whitespece 4. color
+5. typography 6. consistency 
+10-3 Five things to avoid for a good website design
+
+UI color picker website to get UI color
+color pallete
+* Text color should be good enough with background color.
+* don not use too many cursive letters unnecessarily.
+* always look into the spacing between letters and lines
+* avoid unnecessary animation
+
+10-4 Design Resources, figma edit and design secrets
+*https://themeforest.net/
+22. prepic.com
+23. Icon8.com
+24. unsplash.com
+dribble.com
+awwward.com
+figma.com
+10-5 CSS specificity, style priority and !important
+
+*! sentence for most important, most of case css have to external
+If the element has inline styling, that automatically1 wins (1,0,0,0 points)
+For each ID value, apply 0,1,0,0 points
+For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
+For each element reference, apply 0,0,0,1 point
+
+10-6 (advanced) CSS Custom property and use var, calc
+css custom property like :root{
+    --name-propertyName
+}
+tag,className,id{
+    propertyName:var(--name-propertyName)
+}
+float: left;
+    clear: both;
+    
+10-7 CSS debugging using chrome devtool Elements tab
+10-8 (Optional) Create a simple mega menu using HTML and CSS
+
+10-9 Advanced selectors, airbnb css style guides, BEM
+Advanced selectors
+1. Attribute Selectors #
+#sidebar h2 — 0, 1, 0, 1
+h2.title — 0, 0, 1, 1
+h2 + p — 0, 0, 0, 2
+input[type="text"] {
+  width: 200px;
+  }
+ a[href$=".jpg"] {
+  background: url(jpeg.gif) no-repeat left 50%;
+  padding: 2px 0 2px 20px;
+  }
+
+a[href$=".pdf"] {
+  background: url(pdf.gif) no-repeat left 50%;
+  padding: 2px 0 2px 20px;
+  }
+
+a[href$=".doc"] {
+  background: url(word.gif) no-repeat left 50%;
+  padding: 2px 0 2px 20px;
+  }
+  2. Child Selector #
+  body > div > div blockquote {
+  margin-left: 30px;
+  }
+  3. Sibling Combinators #
+  p + h2 {
+  margin-top: 10px;
+  }
+  4. Pseudo-Classes #
+  
+input:focus:hover {
+  background: #C7C7C7;
+  }
+  BEM Blocks, Elements and Modifiers
+  allowes understand HTML5 and CSS3
+  CSS৩ প্রাকটিস + চেকলিস্ট:
+
+CSS৩ রিলেটেড কয়েকটা জিনিস তোমাকে বুঝে নিতে হবে তারমধ্যে আছে-- বেসিক flexbox, বেসিক grid লেআউট, বেসিক media query, এছাড়াও transition, transform সম্পর্কে ধারণা থাকতেই হবে। 
+
+আর বেসিক css বলতে গেলে, color, background color, margin (top, bottom, left, right), padding (top, bottom, left, right), border, display (inline, block, inline-block), float, font, font-family, font-size, font-weight, height, width, list-style, overflow, text-align 
